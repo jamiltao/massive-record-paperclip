@@ -3,7 +3,7 @@
 Gem::Specification.new do |gem|
 
   gem.name        = 'massive-record-paperclip'
-  gem.version     = '0.0.6'
+  gem.version     = '0.0.7'
   gem.platform    = Gem::Platform::RUBY
   gem.authors     = 'Jamil Antonino'
   gem.email       = 'jamil@fluidsoul.net'

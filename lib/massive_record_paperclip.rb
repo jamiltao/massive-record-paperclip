@@ -5,13 +5,7 @@ rescue LoadError
   exit
 end
 
-Paperclip.options[:log] = false
-
-if defined?(Rails)
-  if Rails.respond_to?(:logger)
-    Paperclip.options[:log] = Rails.logger
-  end
-end
+Paperclip.options[:log] = Rails.logger
 
 
 Paperclip.interpolates :id do |attachment, style|
