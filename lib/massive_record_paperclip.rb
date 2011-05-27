@@ -16,7 +16,7 @@ end
 
 Paperclip.interpolates :id do |attachment, style|
   attachment.instance.id.to_s.scan(/.{4}/).join("/")
-
+end
 
 module MassiveRecord
   module Paperclip
