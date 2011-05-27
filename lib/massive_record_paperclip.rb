@@ -34,7 +34,7 @@ module MassiveRecord
 
         has_attached_file(field, options)
 
-        column_family :photo do
+        column_family :info do
           field(:"#{field}_file_name")
           field(:"#{field}_content_type")
           field(:"#{field}_file_size", :integer)
