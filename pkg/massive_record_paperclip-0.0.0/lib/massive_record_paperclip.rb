@@ -77,10 +77,12 @@ module MassiveRecord
 
         ##
         # Define the necessary collection fields in Mongoid for Paperclip
-        field(:"#{field}_file_name",    :type => String)
-        field(:"#{field}_content_type", :type => String)
-        field(:"#{field}_file_size",    :type => Integer)
-        field(:"#{field}_updated_at",   :type => DateTime)
+        column_family :photo do
+          field(:"#{field}_file_name",    :type => String)
+          field(:"#{field}_content_type", :type => String)
+          field(:"#{field}_file_size",    :type => Integer)
+          field(:"#{field}_updated_at",   :type => DateTime)
+        end
       end
     end
   end
